@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body class="container">
+
+    <h1 class="mt-3">Button - Block buttons </h1>
+    <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button">Button</button>
+        <button class="btn btn-primary" type="button">Button</button>
+    </div> <br><br>
+
+    <h5>N>B> Here we create a responsive variation, starting with vertically stacked buttons until the md breakpoint,
+        where .d-md-block replaces the .d-grid class, thus nullifying the gap-2 utility. Resize your browser to see them
+        change.</h5>
+    <div class="d-grid gap-2 d-md-block">
+        <button class="btn btn-primary" type="button">Button</button>
+        <button class="btn btn-primary" type="button">Button</button>
+    </div>
+
+    <br><br>
+    <h5>N>B> You can adjust the width of your block buttons with grid column width classes. For example, for a
+        half-width “block button”, use .col-6. Center it horizontally with .mx-auto, too.</h5>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary" type="button">Button</button>
+        <button class="btn btn-primary" type="button">Button</button>
+    </div>
+
+    <hr>
+    <h1 class="mt-3">Button - Toogle States </h1>
+    <button type="button" class="btn btn-success" data-bs-toggle="button">Toggle button</button>
+    <button type="button" class="btn btn-primary active" data-bs-toggle="button" aria-pressed="true">Active toggle
+        button</button>
+    <button type="button" class="btn btn-primary" disabled data-bs-toggle="button">Disabled toggle button</button>
+
+
+    <!-- Bootstrap JS -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
